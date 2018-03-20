@@ -1,0 +1,149 @@
+@function torem($px) {
+	 @return $px / 108px * 1rem;
+}
+
+/*头部栏start*/
+ .header-fd{
+	display: flex;
+	height: torem(126px);
+	line-height: torem(126px);
+	background-color: #009eff;
+}
+ .header-fd .icon-left{
+	font-size: torem(64px);
+	color: #fff;
+	margin: 0 torem(20px);
+}
+ .header-fd .fd-tit{
+	flex: 1;
+	text-align: center;
+	font-size: torem(50px);
+	color: #fff;
+	font-weight: bold;
+}
+/*头部栏end*/
+
+/*订单内容栏start*/
+.cart{
+	padding: 0 torem(46px);
+}
+.cart .cart-item{
+	display: flex;
+	padding: torem(44px) 0;
+	border-bottom: 2px solid #ededed;
+}
+.cart .cart-item .cart-left{
+	width: torem(150px);
+	text-align: center;
+}
+.cart .cart-item .cart-right{
+	flex: 1;
+}
+.cart .cart-item .cart-right .rg-line1{
+	display: flex;
+	justify-content: space-between;
+	margin: torem(10px) 0;
+}
+.cart-item .cart-right .rg-line1 .shop-title{
+	font-size: torem(44px);
+	font-weight: bold;
+}
+.cart-item .cart-right .rg-line1 .shop-title .icon-right{
+	font-size: torem(44px);
+}
+.cart-item .cart-right .rg-line1 .cart-success{
+	color: #518fdf;
+	font-weight: bold;
+}
+.cart-item .cart-right .rg-line1 .cart-date{
+	font-size: torem(30px);
+	color: #999;
+}
+.cart-item .cart-right .rg-line1 .cart-song{
+	color: #999;
+}
+.cart-item .cart-right .rg-line1 .cart-song .song-time{
+	color: #518fdf;
+}
+.cart-item .cart-right .rg-line2{
+	display: flex;
+	justify-content: space-between;
+	height: torem(150px);
+	line-height: torem(150px);
+	padding-top: torem(26px);
+}
+.cart-item .cart-right .rg-line2 .line2-title{
+	font-weight: bold;
+	font-size: torem(50px);
+	color: #676767;
+}
+
+
+
+
+
+
+
+
+/*订单内容栏end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部固定栏start*/
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+	width: 100%;
+	height: torem(150px);
+}
+.floor{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: torem(126px);
+	background-color: #fff;
+	text-align: center;
+	padding-top: torem(24px);
+	border-top: 1px solid #999;
+	box-shadow: 1px 0 1px 1px #ddd;
+}
+.floor .floor-item{
+	flex: 1;
+}
+/*.floor-active{
+	color: blue;
+}*/
+.floor .floor-item a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.floor .floor-item a .iconfont{
+	font-size: torem(64px);
+	color: #848284;
+}
+.floor .floor-item a .floor-text{
+	margin: torem(10px) 0;
+	color: #848284;
+}
+.floor .floor-item a .floor-active{
+	color: #008eff;
+}
+/*底部固定栏end*/

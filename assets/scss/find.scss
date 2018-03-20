@@ -1,0 +1,283 @@
+@function torem($px) {
+	 @return $px / 108px * 1rem;
+}
+
+/*头部栏start*/
+ .header-fd{
+	display: flex;
+	height: torem(126px);
+	line-height: torem(126px);
+	background-color: #009eff;
+}
+ .header-fd .icon-left{
+	font-size: torem(64px);
+	color: #fff;
+	margin: 0 torem(20px);
+}
+ .header-fd .fd-tit{
+	flex: 1;
+	text-align: center;
+	font-size: torem(50px);
+	color: #fff;
+	font-weight: bold;
+}
+.header .header-img{
+	width: 100%;
+}
+/*头部栏end*/
+
+/*头部导航栏start*/
+.topbar{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: torem(20px) 0;
+	background-color: #f7f7f7; 
+}
+.topbar .topbar-item{
+	display: flex;
+	justify-content: space-between;
+	width: torem(458px);
+	height: torem(130px);
+	padding: torem(50px) torem(40px);
+	border-top: torem(4px) solid #efefef;
+	background-color: #fff;
+}
+.topbar .topbar-item .item-right{
+	width: torem(130px);
+	height: torem(130px);
+}
+.topbar .topbar-item .item-right img{
+	width: 100%;
+	height: 100%;
+}
+.topbar .topbar-item .item-left .lf-tit{
+	font-size: torem(50px);
+	color: #ff9a00;
+}
+.topbar .topbar-item .item-left .lf-cont{
+	color: #9c9a9c;
+	margin-top: torem(14px);
+}
+/*头部导航栏end*/
+.mid-img img{
+	width: 100%;
+}
+
+/*为你推荐start*/
+.shop{
+	padding-bottom: torem(30px);
+	background-color: #ddd;
+}
+.shop .shop-title{
+	width: 100%;
+	height: torem(180px);
+	overflow: hidden;
+	background-color: #fff;
+}
+.shop .shop-title .tit-line{
+	position: relative;
+	width: torem(374px);
+	height: torem(4px);
+	background-color: #333;
+	margin: 0 auto;
+	margin-top : torem(76px);
+	text-align: center;
+}
+.shop .shop-title .tit-line .contain{
+	position: absolute;
+	top: torem(-20px);
+	left: 50%;
+	margin-left:  torem(-130px);
+	width: torem(262px);
+	background-color: #fff;
+
+}
+.shop .shop-title .tit-line .contain .iconfont{
+	font-size: torem(50px);
+	color: #f72c29;
+}
+.shop .shop-title .tit-line .contain .tit-cont{
+	font-size: torem(50px);
+	color: #333;
+	font-weight: bold;
+}
+.shop .shop-title .bottom-cont{
+	margin-top: torem(40px);
+	text-align: center;
+	color: #9c9a9c;
+}
+
+
+.shop .shop-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: torem(10px) torem(30px);
+	background-color: #fff;
+}
+.shop .shop-content .shop-item{
+	width: torem(496px);
+	border: 1px solid #eee;
+	margin-bottom: torem(5px);
+}
+.shop .shop-content .shop-item img{
+	width: 100%;
+	height: torem(496px);
+}
+.shop .shop-content .shop-item .sp-contain{
+	padding: torem(10px) torem(20px);
+}
+.shop .shop-content .shop-item .sp-contain .sp-tit{
+	font-size: torem(44px);
+	color: #000;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.shop .shop-content .shop-item .sp-contain .sp-cont{
+	font-size: torem(28px);
+	color: #999;
+	margin: torem(6px) 0;
+}
+.shop .shop-content .shop-item .sp-contain .sp-price{
+	height: torem(70px);
+	line-height: torem(70px);
+	color: #ff6100;
+}
+.shop .shop-content .shop-item .sp-contain .sp-price .price-icon{
+	font-size: torem(28px);
+}
+.shop .shop-content .shop-item .sp-contain .sp-price .price-num{
+	font-weight: bold;
+	font-size: torem(40px);
+}
+.shop .shop-content .shop-item .sp-contain .sp-price .price-remove{
+	color: #999;
+}
+.shop .shop-content .shop-item .sp-contain .price-bottom{
+	height: torem(80px);
+	border-top: 2px dashed #cfcfcf;
+	line-height: torem(80px);
+	color: #999;
+}
+.shop .shop-floor{
+	height: torem(150px);
+	color: #999;
+	text-align: center;
+	font-weight: bold;
+	line-height: torem(150px);
+	background-color: #fff;
+}
+.shop .shop-floor .icon-right{
+	font-size: torem(36px);
+	color: #999;
+}
+
+/*为你推荐end*/
+
+
+
+/*限时好礼start*/
+.shop .time-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 torem(30px);
+	background-color: #fff;
+}
+.shop .time-content .time-item{
+	position: relative;
+	width: torem(330px);
+}
+.shop .time-content .time-item .time-posi{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: torem(132px);
+	height: torem(50px);
+	line-height: torem(50px);
+	background-color: #423c39;
+	color: #fff;
+	font-size: torem(30px);
+} 
+.shop .time-content .time-item img{
+	width: 100%;
+}
+.shop .time-content .time-item .time-title{
+	margin: torem(20px) 0;
+	color: #313013;
+}
+.shop .time-content .time-item .time-price{
+	margin-top: torem(10px);
+}
+.shop .time-content .time-item .time-price .time-money{
+	color: #ff614a;
+}
+.shop .time-content .time-item .time-price .time-remove{
+	font-size: torem(30px);
+	color: #adaaad;
+}
+/*限时好礼end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部固定栏start*/
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+	width: 100%;
+	height: torem(150px);
+}
+.floor{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: torem(126px);
+	background-color: #fff;
+	text-align: center;
+	padding-top: torem(24px);
+	border-top: 1px solid #999;
+	box-shadow: 1px 0 1px 1px #ddd;
+}
+.floor .floor-item{
+	flex: 1;
+}
+/*.floor-active{
+	color: blue;
+}*/
+.floor .floor-item a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.floor .floor-item a .iconfont{
+	font-size: torem(64px);
+	color: #848284;
+}
+.floor .floor-item a .floor-text{
+	margin: torem(10px) 0;
+	color: #848284;
+}
+.floor .floor-item a .floor-active{
+	color: #008eff;
+}
+/*底部固定栏end*/
